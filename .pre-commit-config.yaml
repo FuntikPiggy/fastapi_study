@@ -1,0 +1,7 @@
+repos:
+  - repo: local
+    hooks:
+    - id: pre-commit-config
+      name: pre-commit-config
+      entry: pre-commit
+      language: script
