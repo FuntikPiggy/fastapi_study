@@ -10,9 +10,7 @@ def setup_logger():
     ch.setLevel(logging.DEBUG)
 
     # Задаем формат логов
-    formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    )
+    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
     ch.setFormatter(formatter)
 
     # Добавляем обработчик к логгеру
