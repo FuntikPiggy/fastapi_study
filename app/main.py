@@ -20,11 +20,11 @@ def read_custom_message():
 
 @app.get("/users")
 def read_users_dict():
-    return models.User(name="John Doe", id=1)
+    return models.User01(name="John Doe", id=1)
 
 
 @app.post("/user")
-def add_user_to_dict(user: models.User):
+def add_user_to_dict(user: models.User02):
     usr = user.__dict__
     usr.update({"is_adult": user.age >= 18})
     return usr

@@ -1,11 +1,13 @@
-from datetime import datetime
-
 from pydantic import BaseModel
 
 
 # Создаём модель данных, которая обычно располагается в файле models.py
-class User(BaseModel):
-    # id: int
+class User01(BaseModel):
+    id: int
+    name: str = ""
+
+
+class User02(BaseModel):
     name: str = ""
     age: int
 
